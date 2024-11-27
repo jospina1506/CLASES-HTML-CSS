@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative</title>
+
+    <!-- UN ELEMENTO TIENE POSITION RELATIVE CUANDO SU PROPIEDAD position ES relative
+    CUANDO UN ELEMENTO TIENE LA POSITION RELATIVE PODEMOS DECIR QUE ESE ELEMENTO ESTÁ
+    POSICIONADO-->
+
+
+    <style>
+
+        .caja{
+            width: 150px;
+            height: 150px;
+            background-color: chartreuse;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            
+           
+        }
+
+        .roja{
+            background-color: red;
+            position: relative;
+            left: 100px;
+            top:100px;
+            z-index: -1;
+            
+            
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+    <div class="caja"></div>
+    <div class="caja roja"></div>
+    <div class="caja"></div>
+
+    
+</body>
+</html>

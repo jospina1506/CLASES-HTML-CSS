@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Escala</title>
+
+    <!-- TRANSICIONES -->
+    <!-- linear
+    ease-in
+    ease-out
+    ease-in-out -->
+
+    <style>
+
+        @font-face {
+            font-family: "Monserrat";
+            src: url("./assets/fonts/Montserrat-VariableFont_wght.ttf");
+        }
+
+        .contenedor-imagen{
+            width: 225px;
+            height: 118px;
+            overflow: hidden;
+        }
+
+        .contenedor-imagen img{
+
+            width: 100%;
+            height: auto;
+            transition:all .2s ease-in;
+        }
+
+        .boton-noticia{
+            display: block;
+        }
+
+        .boton-noticia:hover img{
+
+            transform:scale(1.1,1.1);
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+        <a class="boton-noticia" href="#">
+            <div class="contenedor-imagen">
+                <img src="./assets/img/verstappen.avif" alt="Imagen de Max Verstappen">
+            </div>
+        </a>
+
+
+    
+    
+    
+</body>
+</html>

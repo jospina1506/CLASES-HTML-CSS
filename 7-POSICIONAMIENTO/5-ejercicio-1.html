@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Ejercicio 1</title>
+
+    <!-- -->
+
+
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+
+        html,body{
+            font-family: "Roboto";
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        p,h3{
+            margin: 0;
+            padding: 0;
+        }
+  
+        .noticia{
+            width: 310px;
+        }
+
+        .contenedor-imagen{
+            position: relative;
+        }
+
+        .contenedor-imagen img{
+
+            width: 100%;
+            display: block;
+            height: 100%;
+        }
+
+        .footer-noticia{
+            border-bottom: 1px solid #dddddd;
+            margin-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .prenoticia{
+            font-size: 12px;
+            color: #aaaaaa;
+            padding-top: 10px;
+            padding-bottom: 2px;
+        }
+
+        .autor{
+
+            font-size: 12px;
+            color: #888888;
+        }
+
+        .fecha{
+            font-size: 11px;
+            color: #bbbbbb;
+        }
+
+        .subtitular a{
+
+            text-decoration: none;
+        }
+
+        .subtitular a:link{
+            color: #151515;
+        }
+
+        .subtitular a:visited{
+            color: #151515;
+        }
+
+        .subtitular a:hover{
+            color: #f9a300;
+        }
+
+        .subtitular a:active{
+            color: #151515;
+        }
+
+        .contenedor-etiqueta-as{
+            width: 65px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+
+        }
+        
+        .contenedor-etiqueta-as img{
+            width: 100%;
+        }
+
+        .en-directo{
+
+            width: 107px;
+            height: 25px;
+            background-color:rgba(0,0,0,0.5);
+            border-radius: 15px;
+            border: white 1px solid;
+            position: absolute;
+            top:10px;
+            right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .en-directo img{
+            height: 12px;
+            width: 12px;
+        }
+
+        .en-directo span{
+
+            font-size: 11px;
+            color: white;
+            font-weight: bold;
+        }
+
+    </style>
+
+
+
+</head>
+<body>
+
+    <article class="noticia">
+
+        <div class="contenedor-imagen">
+            <a href="#">
+                <img src="./assets/img/benzema.jpg" alt="Imagen de Benzema hablando con Vinicius">
+            </a>
+            <div class="contenedor-etiqueta-as">
+                <img src="./assets/img/as.jpg">
+            </div>
+
+            <div class="en-directo">
+                <img src="./assets/img/red-circle.gif">
+                <span>EN DIRECTO</span>
+            </div>
+           
+        </div>
+        <p class="prenoticia">
+            INTERNACIONAL
+        </p>
+
+        <h3 class="subtitular">
+            <a href="#">Benzema: "Hablé con Vinicius, estaba triste"</a>     
+        </h3>
+
+        <footer class="footer-noticia">
+            <span class="autor">AS.COM</span>
+            <span class="fecha">30/10/2024</span>
+        </footer>
+
+
+
+
+
+
+    </article>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+/* ================================================= */
+/* FIRST MOBILE */
+/* ================================================= */
+*{
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html,body{
+
+    font-family: "Open Sans";
+    font-size: 16px; /* 1rem */
+}
+
+.contenedor-menu-carrito{
+    width: 100%;
+    height: 50px;
+    background-color: #f3f3f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+
+}
+
+/*====================================================*/
+/*FORMULARIO DE BÚSQUEDA
+/*====================================================*/
+.contenedor-buscar{
+
+    width: 200px;
+    height: 32px;
+    position: relative;
+
+}
+
+.input-buscar{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    padding-left: 35px;
+    border: none;
+}
+
+.boton-lupa{
+
+    position: absolute;
+    top:2px;
+    left: 5px;
+    border:none;
+    background: url("../img/search.png") no-repeat;
+    background-size: 70% 70%;
+    background-position: 4px 4px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+/*====================================================*/
+/*FIN FORMULARIO DE BÚSQUEDA
+/*====================================================*/
+
+/*====================================================*/
+/*ICONOS MENÚ SUPERIOR (USER,CORAZÓN,CARRITO
+/*====================================================*/
+
+#menu-carrito{
+    
+    display: flex;
+    gap:20px;
+}
+
+
+.usuario-icon{
+    font-size: 1.4rem;
+    color: #b2b2b2;
+
+}
+
+.usuario-icon:hover{
+    color:#6009b0; /* Tened en cuenta que usuario-icon NO es un a */
+}
+
+.corazon-icon{
+    font-size: 1.5rem;
+    color: #b2b2b2;
+    
+}
+
+.corazon-icon:hover{
+    color:#6009b0; /* Tened en cuenta que usuario-icon NO es un a */
+}
+
+.carrito-icon{
+    font-size: 1.5rem;
+    color: #b2b2b2;
+    
+}
+
+.carrito-icon:hover{
+    color:#6009b0; /* Tened en cuenta que usuario-icon NO es un a */
+}
+
+
+/*====================================================*/
+/*MENU PRINCIPAL
+/*====================================================*/
+
+.logo{
+    width: 120px;
+    filter:invert(0.7);
+    margin-left: 20px;
+}
+
+#menu-bar{
+    width: 30px;
+    filter:invert(0.7);
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.contenedor-logo-menu{
+    background-color: #333333;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.menu-desplegable{
+
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(51,51,51,0.9);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top:0;
+    left:-100%;
+    transition:left 500ms ease-out;
+    
+
+}
+
+.menu-desplegable-show{
+
+    left:0;
+
+}
+
+.menu-desplegable a{
+
+    padding: 16px;
+    color:white;
+    border-bottom: 1px #eeeeee solid;
+
+}
+
+
+
+
+
+
+
+
+
+
+.menu-horizontal{
+    display: none;
+}
+
+
+/*====================================================*/
+/*FIN MENU PRINCIPAL
+/*====================================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================================================= */
+/* MEDIA QUERIES */
+/* ================================================= */
+
+/* MAYOR O IGUAL DE 576PX (A PARTIR DE 575PX INCLUSIVE) - SMARTPHONES */
+@media only screen and (min-width:576px){
+
+
+
+
+
+}
+
+
+/* MAYOR O IGUAL DE 768PX (A PARTIR DE 768PX INCLUSIVE) - SMARTPHONES GRANDES, TABLETS */
+@media only screen and (min-width:768px){
+
+   
+
+
+}
+
+
+
+/* MAYOR O IGUAL DE 992PX (A PARTIR DE 992PX INCLUSIVE) - PC PEQUEÑOS, LAPTOPS */
+@media only screen and (min-width:992px){
+
+
+  
+
+}
+
+/* MAYOR O IGUAL DE 1200PX (A PARTIR DE 1200PX INCLUSIVE) - PC GRANDES, TELEVISIONES */
+@media only screen and (min-width:1200px){
+
+
+
+
+}

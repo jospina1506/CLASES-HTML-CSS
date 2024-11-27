@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/mis-estilos.css"> <!-- ASOCIAMOS UN ARCHIVO EXTERNO LOCAL -->
+    <title>Posiciones en los que puede estar situado un CSS</title>
+
+    <!-- 
+    1) En un archivo en internet (por ejemplo en la linea 8 del head tenemos un link que "importa" un CSS que está internet)
+    2) En un archivo externo local (por ejemplo el archivo "mis-estilos.css" que está en la carpeta de assets)
+    3) En el mismo HTML con una etiqueta style en el head (isla de estilos)
+    4) En la misma etiqueta de un elemento del DOM (estilos en línea)
+    -->
+    <!-- ¿Tiene que ver algo la posición en la que se encuentre un CSS en 
+    cuanto a su especificidad?: Si. En general cuanto más cerca se encuentre
+    un CSS del DOM más poder tiene -->
+
+    <!-- En términos generales la "cercanía está después de la especificidad" -->
+
+    <style>
+
+        h1{
+            background-color: orange;
+        }
+
+        p{
+
+            background-color: blueviolet;
+        }
+
+
+    </style>
+
+
+
+
+</head>
+<body>
+    <!-- ESTO ES UN ESTILO INLINE -->
+    <h1 style="background-color: chartreuse;">Soy un titular</h1>
+    <p class="el-texto">Soy una p</p>
+    <span>Soy un span</span>
+    
+</body>
+</html>

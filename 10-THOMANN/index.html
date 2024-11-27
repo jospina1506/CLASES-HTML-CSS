@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/favicon.ico">
+    <link rel="stylesheet" href="./assets/css/reset-meyer.css">
+    <link rel="stylesheet" href="./assets/css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+    <title>Bienvenidos a Thomann España</title>
+</head>
+
+
+<body>
+
+    <section class="contenedor-menu-carrito">
+
+        <form id="search-form">
+
+            <div class="contenedor-buscar">
+                <input type="text" name="buscar" class="input-buscar" placeholder="Buscar">
+                <input type="submit" class="boton-lupa" value="">
+            </div>
+
+        </form>
+
+        <nav id="menu-carrito">
+            <a href="#"><i class="fa-solid fa-user usuario-icon"></i></a>
+            <a href="#"><i class="fa-solid fa-heart corazon-icon"></i></a>
+            <a href="#"><i class="fa-solid fa-cart-shopping carrito-icon"></i></a>
+        </nav>
+
+    </section>
+
+    <section class="contenedor-header">
+
+        <header class="header-principal">
+
+            <div class="contenedor-logo-menu">
+                <a href="#"><img class="logo" src="./assets/img/thomann-icon.svg" alt="Logo de Thomann"></a>
+                <!-- BOTÓN HAMBURGUESA QUE APARECE EN SMARTPHONE -->
+                <img id="menu-bar" src="./assets/img/hamburger-menu-icon.svg" alt="Botón con tres rayitas horizontales (hamburguesa)">
+                <!-- MENÚ HORIZONTAL QUE APARECE EN TABLET Y PC -->
+                <nav class="menu-horizontal">
+                    <a href="#">Guitarra-Bajo</a>
+                    <a href="#">Drums</a>
+                    <a href="#">Teclados</a>
+                    <a href="#">Estudio</a>
+                    <a href="#">Micros</a>
+                    <a href="#">Efectos</a>
+                </nav>
+                
+            </div>
+
+        </header>
+
+        <!-- MENÚ DESPLEGABLE QUE APARECE EN SMARTPHONE -->
+        <nav class="menu-desplegable" id="menu-desplegable">
+            <a id="boton-principal1" href="#">Guitarra-Bajo</a>
+            <a id="boton-principal2" href="#">Drums</a>
+            <a id="boton-principal3" href="#">Teclados</a>
+            <a id="boton-principal4" href="#">Estudio</a>
+            <a id="boton-principal5" href="#">Micros</a>
+            <a id="boton-principal6" href="#">Efectos</a>
+        </nav>
+
+    </section>
+
+    <section class="carrusel">
+
+        <div class="carrusel-contenedor">
+
+            <div class="carrusel-items">
+
+                <div class="carrusel-item">
+                    <a href="#">
+                        <img src="./assets/img/stage_piano_topsellers.webp" alt="Pianos superventas">
+                    </a>
+                </div>
+
+                <div class="carrusel-item">
+                    <a href="#">
+                        <img src="./assets/img/custom_shop_acoustic_guitars.webp" alt="Guitarras acústicas custom shop">
+                    </a>
+                </div>
+
+                <div class="carrusel-item">
+                    <a href="#">
+                        <img src="./assets/img/millenium_mps_850.webp" alt="Baterías Millenium MPS">
+                    </a>
+                </div>
+
+                <div class="carrusel-item">
+                    <a href="#">
+                        <img src="./assets/img/bluetooth_speaker_topseller.webp" alt="Bafles Bluetooh Superventas">
+                    </a>
+                </div>
+
+                <div class="carrusel-item">
+                    <a href="#">
+                        <img src="./assets/img/prs_electric_guitars_topseller_02_2022.webp" alt="Guitarras PRS superventas">
+                    </a>
+                </div>
+
+                <div class="carrusel-item">
+                    <a href="#">
+                        <img src="./assets/img/custom_shop_saxophones.webp" alt="Saxos Custom Shop">
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- FLECHITAS NAVEGACIÓN DEL CARRUSEL -->
+            <button class="boton-carrusel-anterior">
+                <i class="fa-solid fa-arrow-left"></i>
+            </button>
+
+            <button class="boton-carrusel-siguiente">
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+
+
+
+        </div>
+
+
+
+        <!-- ESTE DIV QUEDA VACÍO Y GLIDER SE ENCARGA DE RELLENARLO CON LOS BOTONCITOS (DOTS)
+        DE NAVEGACIÓN DEL CARRUSEL -->
+        <div class="carrusel-indicadores" role="tablist"></div>
+
+    </section>
+
+
+    <section class="servicios">
+
+        <nav class="menu-servicios">
+
+            <a href="#">
+
+                <img src="./assets/img/money_back.svg">
+                <span>Días Money Back</span>
+
+            </a>
+
+            
+            <a href="#">
+
+                <img src="./assets/img/warranty.svg">
+                <span>Años de garantía</span>
+
+            </a>
+
+            <a href="#">
+
+                <img src="./assets/img/shipping.svg">
+                <span>Envío gratis a partir de 99€</span>
+
+            </a>
+
+            <a href="#">
+
+                <img src="./assets/img/service_repair.svg">
+                <span>El mejor servicio de Europa</span>
+
+            </a>
+
+
+            <a href="#">
+
+                <img src="./assets/img/biggest_warehouse.svg">
+                <span>El mayor almacén de Europa</span>
+
+            </a>
+
+
+        </nav>
+
+
+    </section>
+
+    <h2 class="titular-seccion">Nuestras categorías</h2>
+
+    <section class="categorias">
+
+        <nav class="menu-categorias">
+
+
+            <a href="#">
+
+                <img src="./assets/img/gi.webp">
+                <span>Guitarras y bajos</span>
+
+            </a>
+
+            <a href="#">
+
+                <img src="./assets/img/dr.webp">
+                <span>Baterías y percusión</span>
+
+            </a>
+
+            <a href="#">
+
+                <img src="./assets/img/ta.webp">
+                <span>Teclados</span>
+
+            </a>
+
+            <a href="#">
+
+                <img src="./assets/img/st.webp">
+                <span>Equipo de estudio y recording</span>
+
+            </a>
+
+            <a href="#">
+
+                <img src="./assets/img/mi.webp">
+                <span>Micrófonos</span>
+
+            </a>
+
+            <a href="#">
+
+                <img src="./assets/img/sp.webp">
+                <span>Efectos</span>
+
+            </a>
+
+
+        </nav>
+
+
+    </section>
+
+
+
+    <h2 class="titular-seccion">Marcas populares</h2>
+
+    <section class="marcas-populares">
+
+        <nav class="menu-marcas-populares">
+
+
+            <a href="#">
+
+                <img src="./assets/img/fender.webp">
+                <span>Fender</span>
+
+            </a>
+
+            <a href="#">
+
+                <img src="./assets/img/shure.webp">
+                <span>Shure</span>
+
+            </a>
+
+            <a href="#">
+
+                <img src="./assets/img/gibson.webp">
+                <span>Gibson</span>
+
+            </a>
+
+            <a href="#">
+
+                <img src="./assets/img/harley_benton.webp">
+                <span>Harley Benton</span>
+
+            </a>
+
+            <a href="#">
+
+                <img src="./assets/img/behringer.webp">
+                <span>Behringer</span>
+
+            </a>
+
+            <a href="#">
+
+                <img src="./assets/img/yamaha.webp">
+                <span>Yamaha</span>
+
+            </a>
+
+            <a href="#">
+
+                <img src="./assets/img/universal_audio.webp">
+                <span>Universal Audio</span>
+
+            </a>
+
+            <a href="#">
+
+                <img src="./assets/img/millenium.webp">
+                <span>Millenium</span>
+
+            </a>
+
+            <a href="#">
+
+                <img src="./assets/img/roland.webp">
+                <span>Roland</span>
+
+            </a>
+
+            <a href="#">
+
+                <img src="./assets/img/boss.webp">
+                <span>Boss</span>
+
+            </a>
+
+
+        </nav>
+
+
+    </section>
+
+
+
+    <h2 class="titular-seccion">Noticias</h2>
+
+    <section class="noticias">
+
+        <nav class="menu-noticias">
+
+
+            <a href="#">
+
+                <img src="./assets/img/noticia1.jpg" alt="Beyonce es la reina del pop">
+                <span>Beyoncé - Why She is the Queen of Pop | The Moment | Thomann</span>
+
+            </a>
+
+            <a href="#">
+
+                <img src="./assets/img/noticia2.jpg" alt="3 Doors down">
+                <span>Doors Down - Kryptonite | Vocal Cover | Marcela | Thomann</span>
+
+            </a>
+
+            <a href="#">
+
+                <img src="./assets/img/noticia3.jpg" alt="Simply The Best Played">
+                <span>Simply the Best Played w/ 200 Instruments | Tina Turner | 200D Special | Thomann</span>
+
+            </a>
+
+            <a href="#">
+
+                <img src="./assets/img/noticia4.jpg" alt="Ofrecemos trabajo!!!">
+                <span>Ofrecemos trabajo!!!</span>
+
+            </a>
+
+            <a href="#">
+
+                <img src="./assets/img/noticia5.jpg" alt="Paypal">
+                <span>Paypal</span>
+
+            </a>
+
+            <a href="#">
+
+                <img src="./assets/img/noticia6.jpg" alt="Garantía de satisfacción">
+                <span>Garantía de satisfacción</span>
+
+            </a>
+
+           
+
+
+        </nav>
+
+
+    </section>
+
+
+
+
+    <h2 class="titular-seccion">Comprar y pagar de forma segura</h2>
+
+    <section class="compras-seguras">
+
+        <nav class="menu-compras-seguras">
+
+
+            <a href="#">
+
+                <img src="./assets/img/metodos-de-pago-1.png">
+                <span>Paypal</span>
+
+            </a>
+
+            <a href="#">
+
+                <img src="./assets/img/metodos-de-pago-2.png">
+                <span>Amazon Pay</span>
+
+            </a>
+
+            <a href="#">
+
+                <img src="./assets/img/metodos-de-pago-3.png">
+                <span>Sofortüberweisung</span>
+
+            </a>
+
+            <a href="#">
+
+                <img src="./assets/img/metodos-de-pago-4.png">
+                <span>Visa Card</span>
+
+            </a>
+
+            <a href="#">
+
+                <img src="./assets/img/metodos-de-pago-5.png">
+                <span>Eurocard / Master Card</span>
+
+            </a>
+
+            <a href="#">
+
+                <img src="./assets/img/metodos-de-pago-6.png">
+                <span>American Express</span>
+
+            </a>
+
+            <a href="#">
+
+                <img src="./assets/img/metodos-de-pago-7.png">
+                <span>Dinners Club</span>
+
+            </a>
+
+            <a href="#">
+
+                <img src="./assets/img/metodos-de-pago-8.png">
+                <span>Transferencia Bancaria</span>
+
+            </a>
+
+            <a href="#">
+
+                <img src="./assets/img/metodos-de-pago-9.png">
+                <span>Pago al contado / Contra reembolso</span>
+
+            </a>
+
+
+        </nav>
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- IMPORTANTE: PRIMERO GLIDER (NO OLVIDAR LOS CSS DE GLIDER!!!) -->
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+    <script src="./assets/js/scripts.js"></script>
+
+    
+</body>
+
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute</title>
+
+    <!-- UN ELEMENTO DEL DOM POSICIONADO CON POSICIONAMIENTO absolute 
+    SE POSICIONA RELATIVAMENTE A SU ANCESTRO MAS CERCANO. EN CASO DE
+    NO TENER NINGÚN ANCESTRO POSICIONADO SE POSICIONA EN RELACIÓN AL
+    BODY.
+    CUANDO UN ELEMENTO TIENE POSICIONAMIENTO ABSOLUTE PODEMOS DECIR
+    QUE ESTÁ POSICIONADO -->
+
+
+    <style>
+  
+        .abuelo{
+
+            width: 600px;
+            height: 600px;
+            background-color: antiquewhite;
+            margin-top: 200px;
+            margin-left: 200px;
+            padding-top: 20px;
+            position: relative;
+       
+
+        }
+
+
+        .padre{
+
+            width: 400px;
+            height: 400px;
+            background-color: chartreuse;
+            padding-top: 40px;
+            padding-left: 30px;
+            position: relative;
+ 
+
+            margin-left: 50px;
+            
+
+        }
+
+
+        .hijo{
+
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+            position: absolute;
+            top:10px;
+            left: 400px;
+   
+        }
+
+    </style>
+
+
+
+</head>
+<body>
+
+    <div class="abuelo">
+
+
+        <div class="padre">
+
+
+            <div class="hijo"></div>
+
+        </div>
+
+
+    </div>
+
+
+    
+</body>
+</html>

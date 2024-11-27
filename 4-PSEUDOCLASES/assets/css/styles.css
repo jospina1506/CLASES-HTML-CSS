@@ -1,0 +1,111 @@
+@font-face {
+    font-family: "F1-Bold";
+    src: url("../fonts/Formula1-Bold.otf");
+}
+
+@font-face {
+    font-family: "F1-Regular";
+    src: url("../fonts/Formula1-Regular.otf");
+}
+
+@font-face {
+    font-family: "Monserrat";
+    src: url("../fonts/Montserrat-VariableFont_wght.ttf");
+}
+
+
+*{
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+#botonera-principal-roja{
+
+    height: 71px;
+    background-color: #e10600;
+    display: flex;
+}
+
+.boton-verde{
+    display: flex;
+    width: 150px;
+    justify-content: center;
+    border-radius: 5px 5px 0 0;
+    font-family:"F1-Regular" ;
+    font-size: 13px;
+    cursor:pointer;
+    background-color: green;
+    color: white;
+    padding:5px;
+}
+
+#verde{
+    display:none;
+}
+
+#verde:checked + #botonera-principal-roja{
+
+    background-color: green;
+
+}
+
+#botonera-principal-roja img{
+    width: 130px;
+}
+
+.boton-principal{
+
+    font-family:"F1-Regular" ;
+    font-size: 13px;
+    color:white;
+    padding:0 10px;
+    display: flex;
+    align-items: center;
+    gap:10px;
+    transition: all 100ms ease-in;
+
+
+}
+
+.boton-principal:link{
+
+    background-color: #e10600;
+}
+
+.boton-principal:visited{
+
+    background-color: #e10600;
+}
+
+.boton-principal:hover{
+
+    background-color: #151515;
+}
+
+.boton-principal:active{
+
+    background-color: #e10600;
+}
+
+
+#contenedor-logo-principal{
+
+    padding:0 30px 0 10px;
+    display: flex;
+    align-items: center;
+
+}
+
+.flechita{
+    font-size: 10px;
+}
+
+
+.gradiente{
+    width: 200px;
+    height: 200px;
+
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f731ea+0,e2ef2f+54,e2ef2f+54,e2ef2f+54,e2ef2f+54,e2ef2f+62,7db9e8+100&1+0,0+100 */
+    background: linear-gradient(135deg,  rgba(247,49,234,1) 0%,rgba(226,239,47,0.46) 54%,rgba(226,239,47,0.38) 62%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+}

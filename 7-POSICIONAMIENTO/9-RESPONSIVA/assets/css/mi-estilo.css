@@ -1,0 +1,294 @@
+/* ================================================= */
+/* FIRST MOBILE */
+/* ================================================= */
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+@font-face {
+    font-family: "F1-Regular" ;
+    src: url("../fonts/Formula1-Bold_web_0.ttf");
+}
+
+@font-face {
+    font-family: "F1-Bold";
+    src: url("../fonts/Formula1-Bold_web_0.ttf");
+}
+
+*{
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html,body{
+    font-family: "Titillium Web", sans-serif;
+    font-size: 16px; /* 1rem */
+}
+
+.cabecera-principal{
+
+    height: 80px;
+    background-color: greenyellow;
+}
+
+.botonera-principal{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding:3px;
+    gap: 3px;
+
+}
+
+.boton-principal{
+
+    background-color:#e10600;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "F1-Regular";
+    font-size: 16px;
+    color: white;
+}
+
+.boton-principal-logo{
+    display: none;
+}
+
+.seccion-principal{
+
+    background-color:#151515;
+    display: flex;
+    flex-direction: column;
+    gap:3px;
+    padding: 0 3px;
+}
+
+.articulo-principal{
+
+    background-color: orange;
+    height: 300px;
+    width: 100%;
+    
+}
+
+.footer-principal{
+
+    background-color: #151515;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.logo-direccion{
+
+    display: flex;
+    padding: 20px 0;
+    justify-content: center;
+    border-bottom: 1px #dddddd solid;
+    
+    
+}
+
+.contenedor-logo{
+
+    width: 30%;
+}
+
+.contenedor-logo img{
+    width: 100%;
+}
+
+.direccion{
+    width: 55%;
+    color:white;
+}
+
+.social-media{
+
+    padding:30px 0;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.social-media i{
+
+    font-size: 40px;
+}
+
+.social-media a:link{
+
+    color: white;
+
+}
+
+.social-media a:visited{
+
+    color: white;
+
+}
+
+.social-media a:hover{
+
+    color: white;
+
+}
+
+.social-media a:active{
+
+    color: white;
+
+}
+
+.stores{
+    display: none;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+.stores img{
+    width: 30%;
+    height: auto;
+}
+
+
+
+
+
+/* ================================================= */
+/* MEDIA QUERIES */
+/* ================================================= */
+
+/* MAYOR O IGUAL DE 576PX (A PARTIR DE 576PX INCLUSIVE) - SMARTPHONES */
+@media only screen and (min-width:576px){
+
+    .seccion-principal{
+
+     
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        
+     
+    }
+
+    .articulo-principal{
+
+        width: 48%;
+        margin-bottom: 15px;
+        
+    }
+
+
+
+}
+
+
+/* MAYOR O IGUAL DE 768PX (A PARTIR DE 768PX INCLUSIVE) - SMARTPHONES GRANDES, TABLETS */
+@media only screen and (min-width:768px){
+
+    .cabecera-principal{
+
+        height: 150px;
+       
+    }
+
+    .botonera-principal{
+        
+        
+        flex-direction: row;
+        height: 70px;
+
+    
+    }
+
+    .boton-principal{
+
+     
+        padding: 0 15px;
+ 
+    }
+
+
+
+
+    .articulo-principal{
+
+        width: 32%;
+        margin-bottom: 15px;
+        
+    }
+
+
+    .footer-principal{
+
+        flex-direction: row;
+        justify-content: space-evenly;
+    
+    }
+
+
+    .social-media{
+
+        gap:30px;
+       /*  justify-content: space-evenly; */
+        
+    }
+
+
+    
+.logo-direccion{
+
+    padding: 20px 0;
+    justify-content: flex-start;
+
+    
+    
+}
+
+
+.botonera-principal{
+    background-color:#e10600;
+    gap: 0;
+
+}
+
+}
+
+
+
+/* MAYOR O IGUAL DE 992PX (A PARTIR DE 992PX INCLUSIVE) - PC PEQUEÑOS, LAPTOPS */
+@media only screen and (min-width:992px){
+
+    .articulo-principal{
+
+        width: 23%;
+        margin-bottom: 15px;
+        
+    }
+
+    
+    .boton-principal-logo{
+        display: inline-block;
+    }
+  
+
+
+    .stores{
+        display: flex;
+        align-items: center;
+
+    }
+
+
+
+}
+
+/* MAYOR O IGUAL DE 1200PX (A PARTIR DE 1200PX INCLUSIVE) - PC GRANDES, TELEVISIONES */
+@media only screen and (min-width:1200px){
+
+
+
+
+}

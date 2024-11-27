@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hijos directos</title>
+
+    <style>
+        /* Un selector de hijos directos selecciona y estiliza a aquellos elementos
+        que sean hijos directos de otro elemento  */
+
+        /* .mi-clase > p{
+            background-color: violet;
+        } */
+
+ /*        section > p{
+
+            background-color: violet;
+        } */
+
+        article > div > div > p{
+
+            background-color: violet;
+        }
+
+
+
+
+    </style>
+
+</head>
+<body>
+
+    <p>Soy una p numero 1</p>
+
+    <section>
+
+        <p>Soy una p numero 2</p>
+        <article class="mi-clase">
+            <div>
+                <p>soy la p numero 3</p>
+                <div><p>soy una p</p>soy un div y me han empleado mal porque contengo texto</div>
+            </div>
+        </article>
+        <div class="mi-clase">
+            <p>Soy una p numero 4</p>
+            <div>Soy un div</div>
+        </div>
+
+
+    </section>
+
+
+
+
+</body>
+</html>

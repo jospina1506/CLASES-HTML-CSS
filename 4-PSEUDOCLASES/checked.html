@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset-meyer.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Checked</title>
+
+    <style>
+
+        /* #newsletter:checked{
+
+            -webkit-box-shadow: 5px 5px 20px 5px #474747;
+            box-shadow: 5px 5px 20px 5px #474747;
+        } */
+
+        #newsletter:checked ~ .caja{
+
+            background-color: red;
+        }
+
+
+        .caja{
+
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            margin-top:100px;
+            margin-left: 100px;
+
+        }
+
+
+
+
+    </style>
+
+
+
+</head>
+<body>
+
+    <label for="newsletter">¿Quieres suscribirte a nuestra newsletter?</label>
+    <input id="newsletter" type="checkbox">
+    <div class="caja"></div>
+    <div class="caja"></div>
+
+
+</body>
+</html>

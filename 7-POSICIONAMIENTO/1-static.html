@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static</title>
+
+    <!-- TODOS LOS ELEMENTOS DEL DOM TIENEN POR DEFECTO UNA PROPIEDAD
+    LLAMADA "position". ESTO QUIERE DECIR QUE SI PONEMOS ESTA PROPIEDAD
+    CSS EN CUALQUIER ELEMENTO CON EL VALOR "static" (QUE ES SU VALOR POR
+    DEFECTO) NO VAMOS A CONSEGUIR NADA. NINGÚN CAMBIO. 
+    CUANDO EL NAVEGADOR VA RENDERIZANDO EL HTML (DE ARRIBA A ABAJO Y DE
+    IZQUIERDA A DERECHA) TANTO LOS ELEMENTO DE LÍNEA COMO LOS ELEMENTOS DE
+    BLOQUE VAN OCUPANDO SUS "ESPACIOS NATURALES". ESTO SE CONOCE COMO FLUJO
+    NORMAL.
+    CUANDO LOS ELEMENTOS DE DOM TIENEN SU PROPIEDAD "position" CON SU VALOR
+    POR DEFECTO "static" SE DICE QUE NO ESTÁ POSICIONADO-->
+
+
+    <style>
+         div{
+            position:static;/* Esto no se pone. No hace falta. Es la propiedad con su valor por defecto */
+            background-color: aquamarine;
+         }
+
+    </style>
+</head>
+<body>
+
+    <div>Soy un div y ocupo mi posición natural. No estoy posicionado</div>
+    <span>Soy un span y ocupo mi posición natural. No estoy posicionado</span>
+    
+</body>
+</html>

@@ -1,0 +1,898 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+/* ================================================= */
+/* FIRST MOBILE */
+/* ================================================= */
+*{
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html,body{
+
+    font-family: "Open Sans";
+    font-size: 16px; /* 1rem */
+}
+
+.contenedor-menu-carrito{
+    width: 100%;
+    height: 50px;
+    background-color: #f3f3f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+
+}
+
+.contenedor-header{
+    position: sticky;
+    top:0px;
+    left:0px;
+    background-color: #333333;
+    width: 100%;
+    height:50px;
+    z-index: 2;
+}
+
+.titular-seccion{
+
+     background-color: rgba(0, 181, 189, 0.6);
+     color: white;
+     font-size: 18px;
+     font-weight: bold;
+     padding: 5px 0 5px 15px;
+     margin-top: 40px;
+
+
+}
+
+/*====================================================*/
+/*FORMULARIO DE BÚSQUEDA
+/*====================================================*/
+.contenedor-buscar{
+
+    width: 200px;
+    height: 32px;
+    position: relative;
+
+}
+
+.input-buscar{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    padding-left: 35px;
+    border: none;
+}
+
+.boton-lupa{
+
+    position: absolute;
+    top:2px;
+    left: 5px;
+    border:none;
+    background: url("../img/search.png") no-repeat;
+    background-size: 70% 70%;
+    background-position: 4px 4px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+/*====================================================*/
+/*FIN FORMULARIO DE BÚSQUEDA
+/*====================================================*/
+
+/*====================================================*/
+/*ICONOS MENÚ SUPERIOR (USER,CORAZÓN,CARRITO
+/*====================================================*/
+
+#menu-carrito{
+    
+    display: flex;
+    gap:20px;
+}
+
+
+.usuario-icon{
+    font-size: 1.4rem;
+    color: #b2b2b2;
+
+}
+
+.usuario-icon:hover{
+    color:#6009b0; /* Tened en cuenta que usuario-icon NO es un a */
+}
+
+.corazon-icon{
+    font-size: 1.5rem;
+    color: #b2b2b2;
+    
+}
+
+.corazon-icon:hover{
+    color:#6009b0; /* Tened en cuenta que usuario-icon NO es un a */
+}
+
+.carrito-icon{
+    font-size: 1.5rem;
+    color: #b2b2b2;
+    
+}
+
+.carrito-icon:hover{
+    color:#6009b0; /* Tened en cuenta que usuario-icon NO es un a */
+}
+
+
+/*====================================================*/
+/*MENU PRINCIPAL
+/*====================================================*/
+
+.logo{
+    width: 120px;
+    filter:invert(0.7);
+    margin-left: 20px;
+}
+
+#menu-bar{
+    width: 30px;
+    filter:invert(0.7);
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.contenedor-logo-menu{
+    background-color: #333333;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.menu-desplegable{
+
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(51,51,51,0.9);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top:0;
+    left:-100%;
+    transition:left 500ms ease-out;
+    
+
+}
+
+.menu-desplegable-show{
+
+    left:0;
+
+}
+
+.menu-desplegable a{
+
+    padding: 16px;
+    color:white;
+    border-bottom: 1px #eeeeee solid;
+
+}
+
+.menu-horizontal{
+    display: none;
+}
+
+
+/*====================================================*/
+/*FIN MENU PRINCIPAL
+/*====================================================*/
+
+/*====================================================*/
+/*CARRUSEL - glider js es mobile first
+/*====================================================*/
+.carrusel{
+    margin-top: 40px;
+}
+
+.carrusel-item{
+    padding: 10px;
+}
+
+.carrusel-item img{
+    border-radius: 10px;
+}
+
+.carrusel-contenedor{
+    position: relative;
+}
+
+.boton-carrusel-anterior,.boton-carrusel-siguiente{
+    display:none; /* MOBILE FIRST */
+    position:absolute;
+    width: 46px;
+    height: 46px;
+
+    /* PARA CENTRAR EL BOTÓN VERTICALMENTE */
+    top:50%; /* El top sobre el porcentaje del ancestro posicionado que es .carrusel-contenedor */
+    transform:translateY(-50%); /* El transform es sobre el porcentaje del propio elemento */
+
+    border: none;
+    cursor: pointer;
+    background-color: #333333;
+    color:white;
+    font-size: 20px;
+    border-radius: 23px;
+    z-index: 3;
+}
+
+
+.boton-carrusel-anterior:hover,.boton-carrusel-siguiente:hover{
+    background-color: #6009b0;
+}
+
+/*====================================================*/
+/*FIN CARRUSEL
+/*====================================================*/
+
+/*====================================================*/
+/*MENÚ SERVICIOS
+/*====================================================*/
+.servicios{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.menu-servicios{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-servicios a{
+
+    padding: 8px;
+    cursor: pointer;
+    border-bottom: #333333 1px solid;
+    display: flex;
+    align-items: center;
+    gap:10px;
+
+
+}
+
+.menu-servicios a:link{
+
+    color:#333333;
+}
+
+.menu-servicios a:visited{
+
+    color:#333333;
+}
+
+.menu-servicios a:hover{
+
+    color:#6009b0;
+}
+
+.menu-servicios a:active{
+
+    color:#6009b0;
+}
+
+
+.menu-servicios a img{
+
+    width: 30px;
+    height: auto;
+
+}
+
+
+
+
+/*====================================================*/
+/*FIN MENÚ SERVICIOS
+/*====================================================*/
+
+
+/*====================================================*/
+/*MENÚ CATEGORÍAS
+/*====================================================*/
+.categorias{
+
+    width: 100%;
+}
+
+.menu-categorias{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.menu-categorias a{
+
+    padding:5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap:5px;
+}
+
+.menu-categorias a:link{
+
+    color: #333333;
+}
+
+.menu-categorias a:visited{
+
+    color: #333333;
+}
+
+.menu-categorias a:hover{
+
+    color:#6009b0;
+}
+
+.menu-categorias a:active{
+
+    color:#6009b0;
+}
+
+.menu-categorias a img{
+
+    width: 70px;
+    height: auto;
+    /* FONDO TRANSPARENTE DONDE HAY BLANCO */
+    filter:brightness(1.1);
+    mix-blend-mode: multiply;
+}
+
+.menu-categorias a:nth-child(odd){
+
+    /* IMPARES */
+    background-color: white;
+}
+
+.menu-categorias a:nth-child(even){
+
+    /* PARES */
+    background-color: #f3f3f3;
+}
+
+/*====================================================*/
+/*FIN MENÚ CATEGORÍAS
+/*====================================================*/
+
+
+
+/*====================================================*/
+/*MENÚ MARCAS POPULARES
+/*====================================================*/
+.marcas-populares{
+
+    width: 100%;
+}
+
+.menu-marcas-populares{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.menu-marcas-populares a{
+
+    padding:5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+.menu-marcas-populares a:link{
+
+    color: #333333;
+}
+
+.menu-marcas-populares a:visited{
+
+    color: #333333;
+}
+
+.menu-marcas-populares a:hover{
+
+    color:#6009b0;
+}
+
+.menu-marcas-populares a:active{
+
+    color:#6009b0;
+}
+
+.menu-marcas-populares a img{
+
+    width: 80px;
+    height: auto;
+    /* FONDO TRANSPARENTE DONDE HAY BLANCO */
+    filter:brightness(1.1);
+    mix-blend-mode: multiply;
+}
+
+.menu-marcas-populares a:nth-child(odd){
+
+    /* IMPARES */
+    background-color: white;
+}
+
+.menu-marcas-populares a:nth-child(even){
+
+    /* PARES */
+    background-color: #f3f3f3;
+}
+
+/*====================================================*/
+/*FIN MENÚ MARCAS POPULARES
+/*====================================================*/
+
+
+
+/*====================================================*/
+/*MENÚ NOTICIAS
+/*====================================================*/
+.noticias{
+
+    width: 100%;
+}
+
+.menu-noticias{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding:10px;
+    gap:30px;
+
+}
+
+.menu-noticias a{
+    width:100%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.menu-noticias a:link{
+
+    color: #333333;
+}
+
+.menu-noticias a:visited{
+
+    color: #333333;
+}
+
+.menu-noticias a:hover{
+
+    color:#6009b0;
+}
+
+.menu-noticias a:active{
+
+    color:#6009b0;
+}
+
+.menu-noticias a img{
+
+    width: 100%;
+    height: auto;
+    transition:all 300ms linear;
+
+}
+
+.menu-noticias a span{
+
+    padding:20px 0 30px 20px;
+}
+
+
+.menu-noticias a:hover > img{
+
+    transform: scale(1.1);
+}
+
+
+
+/*====================================================*/
+/*FIN MENÚ NOTICIAS
+/*====================================================*/
+
+/*====================================================*/
+/*MENÚ COMPRAS SEGURAS
+/*====================================================*/
+.compras-seguras{
+
+    width: 100%;
+    padding: 20px;
+}
+
+.menu-compras-seguras{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.menu-compras-seguras a{
+
+    padding:10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap:10px;
+    background-color: #f3f3f3;
+    border-bottom: 1px solid #b4b4b4;
+}
+
+.menu-compras-seguras a:link{
+
+    color: #333333;
+}
+
+.menu-compras-seguras a:visited{
+
+    color: #333333;
+}
+
+.menu-compras-seguras a:hover{
+
+    color:#6009b0;
+}
+
+.menu-compras-seguras a:active{
+
+    color:#6009b0;
+}
+
+.menu-compras-seguras a img{
+
+    width: 50px;
+
+    /* FONDO TRANSPARENTE DONDE HAY BLANCO */
+    filter:brightness(1.1);
+    mix-blend-mode: multiply;
+}
+
+
+
+/*====================================================*/
+/*FIN MENÚ COMPRAS SEGURAS
+/*====================================================*/
+
+
+
+
+
+
+
+
+
+
+
+/* ================================================= */
+/* MEDIA QUERIES */
+/* ================================================= */
+
+/* MAYOR O IGUAL DE 576PX (A PARTIR DE 575PX INCLUSIVE) - SMARTPHONES */
+@media only screen and (min-width:576px){
+
+
+
+
+
+}
+
+
+/* MAYOR O IGUAL DE 768PX (A PARTIR DE 768PX INCLUSIVE) - SMARTPHONES GRANDES, TABLETS */
+@media only screen and (min-width:768px){
+
+   /*  EL MENÚ HAMBURGUESA DESAPARECE */
+    #menu-bar{
+        display: none;
+    }
+
+    .menu-horizontal{
+        display: flex;
+        gap:10px;
+    }
+
+    .menu-horizontal a{
+
+        color:white;
+        background-color: #333333;
+        padding: 8px;
+        border-radius: 10px;
+
+    }
+
+    .menu-horizontal a:link{
+
+        color:white;
+        background-color: #333333;
+
+    }
+
+    .menu-horizontal a:visited{
+
+        color:white;
+        background-color: #333333;
+
+    }
+
+    .menu-horizontal a:hover{
+
+        color:white;
+        background-color:#6009b0;
+
+    }
+
+    .menu-horizontal a:active{
+
+        color:white;
+        background-color: #333333;
+
+    }
+
+
+
+
+
+    .contenedor-logo-menu{
+   
+        justify-content: flex-start;
+        gap:40px;
+    
+    }
+
+
+    .contenedor-buscar{
+
+        width: 300px;
+
+    
+    }
+
+
+    .boton-carrusel-anterior,.boton-carrusel-siguiente{
+        display:block; 
+        opacity: 0;
+        transition: all 1s linear;
+    }
+
+
+    /* ESTE ESTILO SIRVE PARA QUE CUANDO COLOQUEMOS EL CURSOR SOBRE EL BOTÓN
+    DE FLECHA, NO DESAPAREZCA (ESTO ES PORQUE DEJAMOS DE HACER HOVER SOBRE EL 
+    CARRUSEL-ITEMS) */
+    .boton-carrusel-anterior:hover, .boton-carrusel-siguiente:hover{
+        opacity: 1;
+    }
+
+
+    /* HACER APARECER LAS FLECHITAS */
+    .carrusel-items:hover ~ button{
+
+        opacity: 1;
+    }
+
+    .boton-carrusel-anterior{
+
+        left:calc(3%);
+    }
+
+    .boton-carrusel-siguiente{
+
+        right:calc(3%);
+    }
+
+    .menu-servicios{
+
+        flex-direction: row;
+        justify-content: center;
+        gap:20px;
+    
+    }
+
+
+    .menu-servicios a{
+        border-bottom: none;
+    }
+
+    .menu-servicios a span{
+        display: none;
+    }
+
+    .menu-servicios a img{
+        width: 50px;
+    }
+
+
+    .titular-seccion{
+
+        background-color:white;
+        color: #333333;
+        font-size: 24px;
+        font-weight: bold;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+   
+   
+   }
+
+   .categorias{
+
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+
+   }
+
+
+   .menu-categorias{
+
+    width: 80%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.menu-categorias a{
+
+    background-color: white !important;
+    width: 33%;
+    border-bottom: 1px solid #dddddd;
+    padding: 40px 0;
+}
+
+.menu-categorias a span{
+
+    font-size:14px;
+}
+
+
+.marcas-populares{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.menu-marcas-populares{
+
+    width: 80%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.marcas-populares a img{
+
+    width: 60%;
+    transition: all 300ms linear;
+}
+
+.menu-marcas-populares a span{
+    display:none;
+}
+
+.menu-marcas-populares a{
+
+    background-color: white !important;
+    width: 22%;
+    border: 1px solid #b4b4b4;
+    border-radius: 10px;
+    justify-content: center;
+    padding: 32px 14px;
+    margin-bottom: 16px;
+    transition:all 300ms linear;
+}
+
+.menu-marcas-populares a:hover{
+
+    border: 1px solid #333333;
+}
+
+.menu-marcas-populares a:hover > img{
+
+    transform: scale(1.1);
+}
+
+.noticias{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.menu-noticias{
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding:0;
+    gap:0;
+    justify-content: space-between;
+    width: 80%;
+
+}
+
+
+.menu-noticias a{
+    width:49%;
+    margin-bottom: 15px;
+
+}
+
+
+}
+
+
+
+/* MAYOR O IGUAL DE 992PX (A PARTIR DE 992PX INCLUSIVE) - PC PEQUEÑOS, LAPTOPS */
+@media only screen and (min-width:992px){
+
+    .boton-carrusel-anterior{
+
+        left:calc(31%);
+    }
+
+    .boton-carrusel-siguiente{
+
+        right:calc(31%);
+    }
+
+    .menu-servicios a span{
+        display: inline-block;
+        font-size: 12px;
+    }
+
+    .menu-servicios a img{
+
+        width: 30px;
+    }
+  
+
+    .menu-marcas-populares a{
+
+        width: 18%;
+
+    }
+
+
+    .menu-noticias a{
+        width:32%;
+        margin-bottom: 20px;
+    
+    }
+
+}
+
+/* MAYOR O IGUAL DE 1200PX (A PARTIR DE 1200PX INCLUSIVE) - PC GRANDES, TELEVISIONES */
+@media only screen and (min-width:1200px){
+
+
+
+
+}

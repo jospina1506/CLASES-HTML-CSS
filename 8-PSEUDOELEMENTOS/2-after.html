@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>After</title>
+
+    <style>
+
+        *{
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        html,body{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 16px;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+        }
+
+        .descarga-libros{
+
+            background-color: #eeeeee;
+            border-radius: 10px;
+            padding: 30px;
+
+        }
+
+        .lista-libros{
+            background-color: #dddddd;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 20px 0;
+        }
+
+        .lista-libros li{
+
+            padding: 5px;
+        }
+
+        .lista-libros li a::after{
+
+            content:url(./assets/img/pdf.png);
+            margin-left: 5px;
+            position: relative;
+            top:2px;
+        }
+
+    
+
+        .lista-libros li a:link{
+
+            color: #151515;
+
+        }
+
+        .lista-libros li a:visited{
+
+            color: #151515;
+
+        }
+
+        .lista-libros li a:hover{
+
+            color: orange;
+
+        }
+
+        .lista-libros li a:active{
+
+            color: #151515;
+
+        }
+
+        p.idea::after{
+
+            content:url(./assets/img/idea.png);
+            display: inline-block;
+            transform: scale(0.6);
+            position: relative;
+            top:15px;
+
+        }
+
+        .arroba::after{
+
+            content:"@";
+            font-size: 32px;
+            font-family:"Gill Sans";
+            margin-right: 5px;
+        }
+
+        .saludo::after{
+
+            content: "Hola ";
+            font-size: 32px;
+            font-family:"Gill Sans";
+        }
+
+        p.cuadrado::after{
+
+            content:"";
+            height: 20px;
+            width: 20px;
+            background-color: chartreuse;
+            display: inline-block;
+            border-radius: 20px;
+            border:green 2px solid;
+            margin-left: 5px;
+            position: relative;
+            top:6px;
+
+
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+
+    <section class="descarga-libros">
+
+        <h2 class="idea">Tus libros favoritos</h2>
+
+        <ul class="lista-libros">
+            <li><a href="#">La conjura de los necios</a></li>
+            <li><a href="#">Fundación e imperio</a></li>
+            <li><a href="#">Niebla</a></li>
+        </ul>
+
+        <span class="saludo">Juanito</span>
+        <p class="saludo">Jaimito</p>
+        <p class="idea">Qué idea más buena!!!</p>
+        <p class="arroba">Escribir una @ detrás de este texto</p>
+        <p class="cuadrado">Poner un círculo verde detrás de este texto</p>
+
+
+    </section>
+    
+</body>
+</html>
